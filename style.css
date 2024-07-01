@@ -1,6 +1,400 @@
-body {
-    background-color: #f5f5dc;
+/* width - ширина */
+/* height - высота */
+
+body{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+   font-weight: bold;
+   color: black;
+   font-size: 16px;
 }
-.title {
-    font-family: Arial, Helvetica, sans-serif;
+
+.container {
+   width: auto;
+   margin: 0 auto;
+}
+
+.header{
+   background-color: #334053;
+   background-size: cover;
+}
+/* Ссылки */
+.header a{
+   color: #ffffff;
+}
+
+.menu{
+   display: flex;
+}
+
+.menu li a {
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 14px; 
+
+}
+
+.menu li {
+   margin-right: 40px;
+   letter-spacing: 0.1px;
+}
+
+.tel{
+   font-size: 17px;
+   text-decoration: none;
+   margin-left: auto;
+   letter-spacing: 0.1px;
+}
+
+.nav{
+   display: flex;
+   align-items: center;
+   padding: 223px;
+   padding-top: 57px;
+   padding-bottom: 0px;
+}
+
+ul, li{
+   display: block;
+   padding: 0;
+   margin: 0;
+}
+/* HOME */
+.homeH{
+   color:black;
+   padding-left: 223px;
+   padding-top: 50px;
+   text-decoration: none;
+   margin-bottom: 25px;
+}
+/* Other */
+.OtherH{
+   color:black;
+   padding-left: 223px;
+}
+
+.logo{
+   width: 30px;
+   height: 30px;
+   margin-right: 69px;
+}
+/* Текст в home */
+.description{
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 14px;
+   color:black;
+   display: flex;
+   justify-content: space-between;
+   width: 1164px;
+   /* height: 243px; */
+   background-color: none;
+}
+
+.desc-left{
+   padding-left: 223px;
+   
+}
+.desc-right{
+   padding-right: 223px;
+   position: absolute;
+   right: 0;
+}
+.fontleft{
+   font-size: 17px;
+   font-weight:normal;
+   width: 582px;
+
+
+}
+.fontright{
+   font-size: 17px;
+   font-weight:normal;
+   width: 582px;
+}
+
+.homeText{
+   color:#363636;
+   font-size: 30px;
+   padding-left: 223px;
+   width: 600px;
+   padding-bottom: 60px;
+   
+}
+.footer2{
+   color:black;
+   font-weight: bold;
+   font-size: 24px;
+}
+.afterFooter{
+   padding-top: 17.43px;
+   font-weight: normal;
+   font-size: 17px;
+   padding-bottom: 70px;
+}
+
+.footer{
+   padding-top: 20px;
+   background-color: #334053;
+   padding-bottom: 180px;
+}
+.footerText{
+   font-size: 24px;
+   color:white;
+   padding-left: 223px;
+}
+.footerTextAfter{
+   color:white;
+   font-size: 17px;
+   font-weight: normal;
+   max-width: 1390px;
+}
+
+
+
+
+/* ADAPTATION */
+
+.phoneText{
+   color: white;
+   height: 10px;
+   position: absolute;
+   transform: translate(50px, -28px);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1610px) {
+   .description{
+      display: flex;
+   }
+   .desc-right{
+      padding:0;
+      position: relative;
+      padding-left: 223px;
+   }
+   .menuphone{
+      display: none;
+   }
+   .OtherH{
+      position: absolute;
+      padding-left: 223px;
+      top: 70%;
+   }
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) and (max-width: 1609px) {
+   .description{
+      display: grid;
+   }
+   .desc-right{
+      padding:0;
+      position: relative;
+      padding-left: 223px;
+   }
+   .menuphone{
+      display: none;
+   }
+   .OtherH{
+      position: absolute;
+      padding-left: 223px;
+      top: 80%;
+   }
+   .footer{
+      position: absolute;
+      padding-top: 10%;
+   }
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+   .description{
+      display: grid;
+      width: 900px;
+      height: 400px;
+   }
+   .homeH{
+      padding-left: 100px;
+   }
+   .OtherH{
+      padding-left: 100px;
+   }
+   .desc-left{
+      padding-left: 100px;
+   }
+   .desc-right{
+      padding-left: 100px;
+      position: relative;
+      padding-right: 0px;
+   }
+   .nav{
+      padding-left: 100px;
+      padding-right: 100px;
+   }
+   .menu{
+      display: none;
+   }
+   .menuphone ul ul{
+      display:none;
+   }
+   .menuphone ul li:hover > ul{
+      display:block;
+      background-color: #334053;
+      padding-top: 10px;
+      border-bottom-left-radius: 6%;
+      border-bottom-right-radius: 6%;
+      width: 130px;
+      height: 130px;
+      position:absolute;
+   }
+   .menuphone ul li ul li a{
+      text-decoration: none;
+      color: white;
+      line-height: 30px;
+      padding-left: 5px;
+      padding-top: 10px;
+   }
+   .menuphone ul li img{
+      width: 30px;
+      height: 30px;
+   }
+   .logo{
+      margin-right: 40px;
+   }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+   .description{
+      display: grid;
+      width: 900px;
+      height: 400px;
+   }
+   .homeH{
+      padding-top: 70px;
+      padding-left: 70px;
+   }
+   .OtherH{
+      padding-left: 70px;
+   }
+   .desc-left{
+      padding-left: 70px;
+   }
+   .desc-right{
+      padding-left: 70px;
+      position: relative;
+      padding-right: 0px;
+   }
+   .nav{
+      padding-left: 70px;
+      padding-right: 70px;
+   }
+   .menu{
+      display: none;
+   }
+   .menuphone ul ul{
+      display:none;
+   }
+   .menuphone ul li:hover > ul{
+      display:block;
+      background-color: #334053;
+      padding-top: 10px;
+      border-bottom-left-radius: 6%;
+      border-bottom-right-radius: 6%;
+      width: 130px;
+      height: 130px;
+      position:absolute;
+   }
+   .menuphone ul li ul li a{
+      text-decoration: none;
+      color: white;
+      line-height: 30px;
+      padding-left: 5px;
+      padding-top: 10px;
+   }
+   .menuphone ul li img{
+      width: 30px;
+      height: 30px;
+   }
+   .logo{
+      margin-right: 40px;
+   }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+   .menu{
+      display: none;
+   }
+   .menuphone ul ul{
+      display:none;
+   }
+   .menuphone ul li:hover > ul{
+      display:block;
+      background-color: #334053;
+      padding-top: 10px;
+      border-bottom-left-radius: 6%;
+      border-bottom-right-radius: 6%;
+      width: 130px;
+      height: 130px;
+      position:absolute;
+   }
+   .menuphone ul li ul li a{
+      text-decoration: none;
+      color: white;
+      line-height: 30px;
+      padding-left: 5px;
+      padding-top: 10px;
+   }
+   .menuphone ul li img{
+      width: 30px;
+      height: 30px;
+   }
+   .menuphone ul li img:hover{
+      width: 40px;
+      height: 40px;
+   }
+   .logo{
+      margin-right: 40px;
+   }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+   .menu{
+      display: none;
+   }
+   .menuphone ul ul{
+      display:none;
+   }
+   .menuphone ul li:hover > ul{
+      display:block;
+      background-color: #334053;
+      padding-top: 10px;
+      border-bottom-left-radius: 6%;
+      border-bottom-right-radius: 6%;
+      width: 130px;
+      height: 130px;
+      position:absolute;
+   }
+   .menuphone ul li ul li a{
+      text-decoration: none;
+      color: white;
+      line-height: 30px;
+      padding-left: 5px;
+      padding-top: 10px;
+   }
+   .menuphone ul li img{
+      width: 30px;
+      height: 30px;
+   }
+   .logo{
+      margin-right: 40px;
+   }
 }
