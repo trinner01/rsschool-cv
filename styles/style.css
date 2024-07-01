@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+}
+
+.page {
+    color: #756555;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+
+.header {
+    background-color: #dce0d9;
+    height: 850px;
+}
+
+.avatar {
+    text-align: right;
+    transform: translateY(-650px);
+    padding-right: 50px;
+}
+
+.h1Name {
+    font-size: 40px;
+    text-align: right;
+    padding-right: 1%;
+    margin-top: 0%;
+}
+
+.container {
+    background-color: #fbf6ef;
+}
+
+.footer {
+    background-color: #ead7c3;
+}
+
+.fontleft {
+    font-size: 17px;
+    font-weight: normal;
+    width: 582px;
+}
+
+a {
+    color: #756555;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    text-decoration: none;
+}
